@@ -1,0 +1,201 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Boran Dora Evmez | Digital Space</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Boran Dora Evmez resmi bağlantıları, projeleri ve sosyal medya hesapları.">
+    <meta name="theme-color" content="#050816">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PARTICLES -->
+    <div id="particles-js"></div>
+
+    <!-- GRADIENT ORBS -->
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- MUSIC -->
+    <audio id="hoverSound" preload="auto">
+        <source src="hover.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- MAIN -->
+    <main class="container" data-aos="zoom-in">
+
+        <!-- TOP BAR -->
+        <div class="top-bar">
+            <button id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <button id="shareBtn">
+                <i class="fas fa-share-alt"></i>
+            </button>
+        </div>
+
+        <!-- PROFILE -->
+        <section class="profile-section">
+
+            <div class="profile-ring">
+                <img
+                src="profilfoto.png"
+                alt="Boran Dora Evmez"
+                class="profile-pic">
+            </div>
+
+            <div class="verified">
+                <h1>Boran Dora Evmez</h1>
+                <i class="fas fa-badge-check"></i>
+            </div>
+
+            <p class="username">@borandoraa</p>
+
+            <p class="bio">
+                Computer Engineer | AI & Optimization Researcher | Musician
+            </p>
+
+            <div class="dino-game">
+                <canvas id="dinoCanvas" width="480" height="100" aria-label="Dino game"></canvas>
+                <div class="score" id="dinoScore">0</div>
+                <p class="small">Space tuşuna bas veya dokunarak zıpla</p>
+            </div>
+
+        </section>
+
+        <!-- LINKS -->
+        <section class="links">
+
+            <a href="https://www.instagram.com/borandoraa/" target="_blank" class="link-card instagram magnetic">
+                <div class="left">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </div>
+
+                <div class="right">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+
+            <a href="https://open.spotify.com/user/2avwlrjsgpjqe102rmsys565k" target="_blank" class="link-card spotify magnetic">
+                <div class="left">
+                    <i class="fab fa-spotify"></i>
+                    <span>Spotify</span>
+                </div>
+
+                <div class="right">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+
+            <a href="https://github.com/doreadoraord" target="_blank" class="link-card github magnetic">
+                <div class="left">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub Projects</span>
+                </div>
+
+                <div class="right">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+
+            <a href="https://x.com/doramartelll" target="_blank" class="link-card twitter magnetic">
+                <div class="left">
+                    <i class="fab fa-x-twitter"></i>
+                    <span>Twitter</span>
+                </div>
+
+                <div class="right">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+
+            <a href="https://medium.com/@borandora" target="_blank" class="link-card medium magnetic">
+                <div class="left">
+                    <i class="fab fa-medium"></i>
+                    <span>Medium</span>
+                </div>
+
+                <div class="right">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=borandora@gmail.com" id="contactLink" class="link-card mail magnetic" target="_blank" rel="noopener">
+                <div class="left">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </div>
+
+                <div class="right">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/boran-dora-evmez-666b4a356/" target="_blank" class="link-card linkedin magnetic">
+                <div class="left">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </div>
+
+                <div class="right">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+
+        </section>
+
+        <!-- QUOTE -->
+        <section class="quote-box">
+            <p id="quote">
+                “Build what you dream.”
+            </p>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2026 Boran Dora Evmez</p>
+
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
